@@ -1,0 +1,243 @@
+                                               ASSIGNMENT 
+
+ (HTMLBASIC)
+ 
+Q-1: Define HTML.What is the purpose of HTMLin Web development?
+
+ANS:HTML stands for hyper text markup launguage.it is the fundamental language used to ceate the structure and content of web pages. it uses tags to define the elements like heading ,paragraphs,lists,image and links that make up the webpage.
+
+purpose:
+
+* Building Block: HTML provides the basic structure and layout for web pages. it's like the skeleton of a website, defining how different elements are arranged and presented.
+* Content presenation: it allows you to organize amd display text,image,videos,and other content in a visually appealing and meaningful way.
+* User Interaction: HTML enables user interction through elements like forms and buttons,allowing user to input information and navigate the website.
+* Accessibilty: by using semantic HTML elements,you can make youe website more accessible to pepole with disabilities,such as screen reader users.
+
+Q-2: Explain the basic structure of an HTML document.Identify the mandatory tags and their purposes.
+
+A Basic HTML document follow a hierarchical structure:
+
+ANS:1. <html>: The root element that encompasses the enitre document.
+    2. <head>: Contanis meta-information about the document,which is not directly displayed on the page. key elements within the <head>include:
+         
+         *<title>: Stes the titlt of the webpage that appears in the browser tab or window title bar.
+
+    3. <body>: Contains the visble content of the document,including all the elements that users see on the webpage. This is where you place elementslike:
+
+         * <h1>to<h6>: for headings of different levels.
+
+         * <p>: for paragraphs of text.
+
+         * <ul>and<o1>: for unorderd and ordered lists, respectively.
+
+         * <img>: for displaying iamges.
+
+         * <a>: for creating hyperlinks.
+    
+         * <div>: for creating sections or blocks of content.
+
+         * <span>: for styling or grouping inline elements.
+
+Mandatory Tags:
+
+         * <html>: The root element,required for all HTML documents.
+
+         * <head>: Required to contain meta-information about the document.
+
+         * <title>: Required within the <head> to set the title of the webpage.
+
+         * <body>: Required to hold the visible content of the document.
+
+Q-3: What is the difference between block-level elements and inline elements in HTML? provide example of each.
+ 
+ANS:
+    Block-level elements:
+
+         * start on a new line: Each block-level element occupies a new line in the HTML document.
+
+         * Take up the full width: They extend to the full width avilable within their parent container.
+
+         * Examples: <p>, <h1>, <div>, <ul>, <table>, <hr>
+
+    Inline elements:
+
+         * do not start on a new line: They appear the follow of text without starting a new line.
+
+         * Take up only the width of their content: They only occupy the space required by their content.
+
+         * Examples: <span>, <a>, <b>, <i>, <img>, <input>
+
+Q-4: discuss the role of semantic HTML. why is it impotant for accessibilty and SEO? provide examples of semantic elemenyts.
+
+ANS:
+    Important for Accessibilty and SEO:
+
+        * Accessibilty: Semantic elements provides valuable information to assistive technologies used by people with disabilities. This helps them understand the structure and meaning of the webpage more effectively.
+
+        * SEO: Search engines use semantic elementsto better understand the context of a webpage. This can imporve your website'serach engine ranking.
+
+    Examples of semantic elments:
+
+        * <header>: Defines a header for adocument or section.
+
+        * <nav>: Defines a section with navigation links.
+
+        * <main>: Defines the main content of a document.
+
+        * <aside>: Defines content aside from the page content.
+
+        * <footer>: Defines a footer for a document or section.
+
+        * <article>: Defines an independent, self-contained content item.
+
+        * <section>: Defines a thematic grouping of content.
+
+        * <figure>: Defines a media content, and its caption.
+
+     In summary:
+ 
+ .HTML is the foyndation of web development. understanding its structure, element,and best practies is crucial for building well-structured,accessible, and SEO-friendly websites.
+ 
+
+ (HTML FORMS)
+
+Q-1: What are HTML from used for? Describe the purose of the input,textarea,select, andbutton elements.
+
+ANS:
+
+HTML forms are used to collect user input.They allow web developers to crete interactive elements on web pages where users can enter text,select option from list,and submit data to the server.
+
+      * input: This element is the most versatile,used for various input tyupes such as text fields, checkbox,radiobutton, file uplodes,and more.Its type attribute determines the specific input type.
+
+      * textarea: This element is specifically used for creating muilt-line text input areas,allowing users to enter paragraphs or larger amount text.
+
+      * select: This is element creates dropdown lists or lists of option that users can select from.
+
+      * button: This is element creates clickable that can trigger actions,such as submitting the form or performing other functions.
+
+Q-2: Explain the different between the get and post methods in form submission. when should each be used?
+
+ANS:
+
+Both GET and POST methods are used to send from data to the server,but they differ in how the data is transmitted:
+
+      * GET: Data is appended to the url as query parameters. this method is suitable for small amounts of data and when you want to bookmark or share the form submisson.Howeverit has security and length limitations.
+
+      * POST: Data is sent as part of the http requst body. This method is more secure and can handle larger amounts of data. it's generally preferred for senstive data or when you don't want the data to be visible in the URL.
+
+Q-3: What is the purpose of the label element in a form, and how does it improve accessibilty?
+
+ANS:
+
+The label element is used to associate with a form a form control using the for attribute,screen readers can read the label text to users with visual impaurments,makingthe form more accessible.
+
+      * Accessibilty: When a label is assiociated with a form control using the for attribute,screen readers can read the label text to users with the visual impairments,making the form more accessible.
+
+      * Usability: Clicking on the label text also focuses the asspciated form control, providing a larger clickable area for users.
+
+
+  (HTML TABLE)
+
+Q-1: Explain the structure of an HTML table and the purpose of each of the following elements:<table>,<tr>,<th>,<td>,and <thead>.
+
+Sturcture of an HTML table:
+
+An HTML table is a structured element used to dispaly data in a tabular format. it consists of rows and columns,forming a grid. The basic structure is defined using the <table> tag.
+
+Purpiose of the elements:
+
+      * <table>: This is the root element that defines the entire table.
+      
+      * <tr>: Represents a table row. Each row contains one or more table cells.
+
+      * <th>: Defines a table header cell. Header cells are typically dispalyed with a different style to distinguish them from regular cells.
+
+      * <td>: Represent a table data cell. This is where the actual data is placed.
+
+      * <thead>: Groups the header rows of the table. It improves the structure and accessibilty of the table.
+
+Q-2 What is the difference between colspan and rowspan in tables? provide examples.
+
+colspan:
+
+     * The Colspan attribute allows a cell to span multiple columns.
+
+     * For example, to make a cell span 3 columns, you would use colsapn="3".
+
+Rowspan:
+
+     * The rpwspan attribute allows a cell to span multiple rows.
+
+     * For Example,to make a cell span 2 rows, you would use rowsoan="2".
+
+Example:
+
+html
+
+<table>
+ <tr>
+  <th colspan="2">Header 1</th>
+  <th>Header 2</th>
+ </tr>
+ <tr>
+    <td>cell 1</td>
+    <td>cell 2</td>
+    <td>cell 3</td>
+  </tr>
+  <tr> 
+    <td rowspan="2">Cell 4</td>
+    <td colsapn="2">Cell 5</td>
+  </tr>
+  <tr>
+    <td colsapn="2">Cell 6</td>
+  </tr>
+</table> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

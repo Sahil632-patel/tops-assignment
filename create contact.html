@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Contact form</h1>
+
+    <form>
+        <label for="Full Name">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required minlength="3" maxlength="50" pattern="[a-zA-Z]+"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" required pattern="[0-9]{10}"><br><br>
+
+        <label for="subject">Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <option value="Inquiry">Inquiry</option>
+            <option value="Feedback">Feedback</option>
+            <option value="Support">Support</option>
+        </select><br><br>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required minlegnth="10" maxlength="500"></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
