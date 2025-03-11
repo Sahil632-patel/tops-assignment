@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple intertactive Flexbox </title>
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: auto;
+        }
+
+        /* Main container for sidebar and content */
+        .main-container {
+            display: flex;
+            flex: 1;
+            justify-content: space-between; /* Space between sidebar and content */
+            align-items: stretch; /* Stretch items vertically */
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #f4f4f4;
+            width: 250px;
+            padding: 20px;
+        }
+
+        /* Main content area */
+        .content {
+            flex: 1;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+
+        /* Responsive design: Stack layout for small screens */
+        @media (max-width: 768px) {
+            .main-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Simple Flexbox Layout</h1>
+    </header>
+    
+    <div class="main-container">
+        <div class="sidebar">
+            <h2>Sidebar</h2>
+            <p>This is the sidebar content.</p>
+        </div>
+
+        <div class="content">
+            <h2>Main Content</h2>
+            <p>This is the main content area.</p>
+            <p>Use the browser's inspector to play around with different flex properties like <code>justify-content</code> and <code>align-items</code> to see their effects on the layout.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Footer Content &copy; 2025</p>
+    </footer>
+</body>
+</html>
